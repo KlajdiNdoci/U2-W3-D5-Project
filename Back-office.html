@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Back-office</title>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container"></div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-start">
+          <a href="./Homepage.html" class="me-3 text-white text-decoration-none"><strong>HOMEPAGE</strong></a>
+          <a href="./Back-office.html " class="me-3 text-white text-decoration-none"><strong>BACK-OFFICE</strong></a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mt-4">
+          <h2 class="display-4 d-inline-block">Backoffice</h2>
+          <h5 id="subtitle" class="d-inline-block"></h5>
+
+          <form id="carForm">
+            <div class="mb-3">
+              <label for="carName" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="carName"
+                aria-describedby="event name"
+                placeholder="Inserisci il nome della macchina"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="carBrand" class="form-label">Brand</label>
+              <input
+                type="text"
+                class="form-control"
+                id="carBrand"
+                aria-describedby="event name"
+                placeholder="Inserisci il brand della macchina"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Descrizione</label>
+              <textarea
+                type="text"
+                class="form-control"
+                id="description"
+                aria-describedby="event description"
+                placeholder="Aggiungi una descrizione"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Prezzo</label>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                aria-describedby="event price"
+                placeholder="Inserisci il prezzo"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="imageUrl" class="form-label">URL immagine</label>
+              <input
+                type="url"
+                class="form-control"
+                id="imageUrl"
+                aria-describedby="event URL"
+                placeholder="Inserisci URL qui ..."
+                required
+              />
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button id="create-btn" type="button" class="btn btn-primary">Crea macchina</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
