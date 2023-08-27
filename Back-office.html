@@ -26,9 +26,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 mt-4">
-          <h2 class="display-4 d-inline-block">Backoffice</h2>
-          <h5 id="subtitle" class="d-inline-block"></h5>
-
+          <h2 id="title" class="display-4 d-inline-block">Backoffice</h2>
           <form id="carForm">
             <div class="mb-3">
               <label for="carName" class="form-label">Nome</label>
@@ -88,7 +86,8 @@
 
             <div class="d-flex justify-content-between">
               <button id="create-btn" type="button" class="btn btn-primary">Crea macchina</button>
-              <button type="reset" class="btn btn-secondary">Reset</button>
+              <button id="edit-car-btn" type="button" class="btn btn-success d-none">Modifica macchina</button>
+              <button id="reset-btn" type="reset" class="btn btn-danger">Reset</button>
             </div>
           </form>
         </div>
